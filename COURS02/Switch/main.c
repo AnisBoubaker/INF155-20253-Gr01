@@ -21,6 +21,5 @@ int main() {
         default:
             printf("vous deviez saisir A, B ou C… Quel dommage!\n");
     }
-
     return EXIT_SUCCESS;
 }
