@@ -7,4 +7,6 @@ add_executable(GarderieAnimaux main.c
         mod_personne.c
         mod_personne.h
         mod_animal.c
-        mod_animal.h)
+        mod_animal.h
+        mod_garderie.c
+        mod_garderie.h)

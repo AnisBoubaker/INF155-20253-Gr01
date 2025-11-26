@@ -68,4 +68,4 @@ void free_animal(t_animal* a);
 ### Étape 2 – Module Garderie
 
 1. Créer le module `mod_garderie` qui définit une garderie comme un tableau dynamique d'animaux. 
-2. Depuis le main, créer un refuge et y ajouter des animaux. 
+2. Depuis le main, créer une garderie et y ajouter des animaux. 
