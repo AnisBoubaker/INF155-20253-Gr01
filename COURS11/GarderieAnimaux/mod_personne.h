@@ -24,4 +24,6 @@ t_personne* init_personne(char nom[], char prenom[], char tel[]);
 
 void afficher_personne(const t_personne* p);
 
+void free_personne(t_personne* p);
+
 #endif //GARDERIEANIMAUX_MOD_PERSONNE_H
