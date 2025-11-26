@@ -3,4 +3,6 @@ project(GarderieAnimaux C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(GarderieAnimaux main.c)
+add_executable(GarderieAnimaux main.c
+        mod_personne.c
+        mod_personne.h)
