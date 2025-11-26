@@ -49,7 +49,8 @@ void free_personne(t_personne* p);
 ```
 t_animal* init_animal( const char* nom,
                  const char* espece,
-                 int age,
+                 const char* race,
+                 int annee_naiss, int mois_naiss, int jour_naiss,
                  const t_personne* proprietaire);
 void print_animal(const t_animal* a);
 void free_animal(t_animal* a);
