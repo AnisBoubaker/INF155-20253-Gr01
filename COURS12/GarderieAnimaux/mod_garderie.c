@@ -25,3 +25,21 @@ t_garderie* init_garderie(void)
 
     return g;
 }
+
+
+int garderie_ajouter_animal(t_garderie* g, const t_animal* a)
+{
+    if(g->nb_animaux == g->taille_max){ //Il faut agrandir
+        t_animal** liste_tmp;
+
+        liste_tmp = realloc(g->liste, (g->taille_max+TAILLE_INCREMENT)*sizeof(t_animal*));
+        if(liste_tmp == NULL)
+        {
+            return 0;
+        }
+        g->liste = liste_tmp;
+        g->taille_max += TAILLE_INCREMENT;
+    }
+    g->liste[ g->nb_animaux ] = a;
+    g->nb_animaux++;
+}

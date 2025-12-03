@@ -17,5 +17,10 @@ typedef struct garderie{
 
 t_garderie* init_garderie(void);
 
+//Ajoute un animal à la garderie en s'assurant d'augmenter la taille du tableau
+//au besoin. Retourne vrai si l'animal a bien été ajouté, faux sinon.
+int garderie_ajouter_animal(t_garderie* g, const t_animal* a);
+
+
 
 #endif //GARDERIEANIMAUX_MOD_GARDERIE_H
